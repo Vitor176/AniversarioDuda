@@ -1,0 +1,20 @@
+@media screen and (max-width: 700px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0px 0;
+  }
+
+  .botao {
+    display: flex;
+    width: auto;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 50%;
+  }
+}

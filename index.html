@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animeflix</title>
+  <link rel="stylesheet" href="css/style-inicio.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h2 class="logo"><a href="inicio-netflix.html">NIVERFLIX</a> </h2>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <form class="teste" action="" method="post">
+        <h3>Entrar</h3>
+        <input placeholder="Email ou número de telefone" type="text" name="" id="email">
+        <input placeholder="Senha" type="password" name="" id="password">
+        <input type="button" class="BotaoTeste" onclick="ValidateButton()" id="teste" value="Login"> 
+      </form>
+    </div>
+  </main>
+</body>
+
+<script type="text/javascript">
+  function ValidateButton(){
+    var input = document.querySelector("#email");
+
+    var input2 = document.querySelector("#password")
+
+    var texto = input.value;
+
+    var texto2 = input2.value;
+
+    if(texto == "1197276-2661" && texto2 == "SenhaDuda123")
+    {
+      window.location.href = "inicio.html"
+    }
+    else{
+      alert("Login ou Senha incorreta!")
+    }
+  }
+</script>
+</html>
